@@ -1,0 +1,61 @@
+/* Reset inicial */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Schibsted Grotesk, sans-serif;
+}
+/* Faz o container com tamanho máximo de 1024px e faz o container ficar centralizado independente do tamanho */
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Faz os elementos do header ficarem nas extremidades esquerda e direita */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 1em 0 0;
+    border-bottom: 1px solid #ccc;
+
+}
+/* Some com o "submenu" e torna sua posição absoluta. Antes era afetada pela abertura do submenu, deslocando o elemento*/
+/* width e top: aumenta o submenu para que não haja quebra de linha e faz com que a posição do submenu respeite o padding do li principal */
+.submenu {
+    display: none;
+    border: 1px solid red;
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 55px;
+}
+
+/* > apenas para o filho DIRETO do elemento (classe .menu) */
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+/* Ajusta o float; Tenho dúvida do porque ele funciona numa div "solta" no codigo */
+.clear {
+    clear: both;
+}
+/* quando passar o mouse em cima do li do menu, altero o display do .submenu */
+.menu li:hover .submenu{
+    display: block;
+}
+
+.menu li:hover {
+    border-color: red;
+}
+
+.submenu li{
+    display: block;
+    padding: 8px;
+}
