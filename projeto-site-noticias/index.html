@@ -18,7 +18,7 @@
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
-        <nav>
+        <nav class="container">
             <ul class="menu">
                 <li>
                     Esportes
@@ -52,5 +52,62 @@
             <div class="clear"></div>
         </nav>
     </header>
+    <!-- cria uma div para o conteúdo principal da página; É dividido entre main e aside, sendo o main o corpo principal e o aside a barra lateral.
+    Cada um possui notícias, que são arrumadas pelo grid no css -->
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Em Destaque</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nesciunt corrupti sint, natus harum laudantium ipsam</h3>
+                    </a>
+                </article>
+            </section>
+            <section>
+                <h2>Últimas notícias</h2>
+                <div class="noticias">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nesciunt corrupti sint, natus harum laudantium ipsam</h3>
+                    </a>
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nesciunt corrupti sint, natus harum laudantium ipsam</h3>
+                    </a>
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nesciunt corrupti sint, natus harum laudantium ipsam</h3>
+                    </a>
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nesciunt corrupti sint, natus harum laudantium ipsam</h3>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <section class="novidades">
+                <h2>Novidades</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nesciunt corrupti sint, natus harum laudantium ipsam</h3>
+                    </a>
+                </article><article class="noticia">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nesciunt corrupti sint, natus harum laudantium ipsam</h3>
+                    </a>
+                </article><article class="noticia">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nesciunt corrupti sint, natus harum laudantium ipsam</h3>
+                    </a>
+                </article>
+            </section>
+        </aside>
+    </div>
 </body>
 </html>

@@ -21,13 +21,14 @@ header .container {
 header {
     padding: 1em 0 0;
     border-bottom: 1px solid #ccc;
-
+    margin-bottom: 56px;
 }
 /* Some com o "submenu" e torna sua posição absoluta. Antes era afetada pela abertura do submenu, deslocando o elemento*/
 /* width e top: aumenta o submenu para que não haja quebra de linha e faz com que a posição do submenu respeite o padding do li principal */
 .submenu {
     display: none;
     border: 1px solid red;
+    background-color: #fff;
     position: absolute;
     left: 0;
     width: 300px;
@@ -58,4 +59,50 @@ header {
 .submenu li{
     display: block;
     padding: 8px;
+}
+
+/* grid: possui linhas e colunas */
+.conteudo {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+/* as imagens estavam ultrapassando o tamanho do container. Colocando max-width 100% força a imagem a ficar dentro do container */
+.noticia img {
+    max-width: 100%;
+}
+
+.destaque {
+    margin-bottom: 56px;
+}
+
+/* Deixa o texto do lado da imagem na seção principal */
+.destaque .noticia a {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+/* Apenas ajusta as posições com paddings e margins */
+.destaque .noticia img {
+    margin-right: 10px;
+}
+
+section h2 {
+    margin-bottom: 32px;
+}
+
+aside {
+    padding-left: 40px;
+}
+
+aside .noticia {
+    margin-bottom: 24px;
+}
+
+/* faz o display grid das noticias principais, dividindo o container para dois em dois elementos */
+.noticias{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 1%;
+    row-gap: 5%;
 }
